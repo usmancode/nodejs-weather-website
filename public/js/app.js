@@ -20,7 +20,7 @@ weather_form.addEventListener('submit', (e) => {
 
     response.json().then((data) => {
       if (data.error) {
-        message1.textContent = data.error
+        message1.textContent = "Please Try With Different Location(Try to use alphabet only)"
       } else {
         const message = `
              Location: ${data.location},
