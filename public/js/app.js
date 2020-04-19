@@ -15,7 +15,7 @@ weather_form.addEventListener('submit',(e)=>{
   message2.textContent=''
  
 
-fetch('http://localhost:3001/weather?address='+location).then((response)=>{
+fetch('/weather?address='+location).then((response)=>{
   
     
     response.json().then((data)=>{
